@@ -1,0 +1,33 @@
+@use "../../utils/variables" as colors;
+
+.button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.text {
+  font-weight: 700;
+  color: colors.$gray;
+
+  &:hover {
+    color: colors.$very-dark-violet;
+  }
+}
+
+.primary {
+  background: colors.$cyan;
+  border-radius: 28px;
+  padding: 8px 24px;
+  font-weight: 700;
+  color: white;
+
+  &:hover {
+    background: #9ae3e3;
+  }
+}
