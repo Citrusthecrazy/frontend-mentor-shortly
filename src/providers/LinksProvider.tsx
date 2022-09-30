@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import LinksContext from "../contexts/LinksContext";
+import LinksContext, { LinksType } from "../contexts/LinksContext";
 
 const LinksProvider = ({ children }: { children: React.ReactNode }) => {
-  const [links, setLinks] = useState<string[] | null>(null);
+  const [links, setLinks] = useState<LinksType[] | null>(null);
 
   return (
     <LinksContext.Provider value={{ links, setLinks }}>
