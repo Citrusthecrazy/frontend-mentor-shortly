@@ -9,6 +9,7 @@ export default styled.button`
   border: none;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: all 0.15s ease-in-out;
   &:hover {
     cursor: pointer;
     background: ${({ theme }) => theme.colors.cyanHover};

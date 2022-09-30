@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components";
 const theme = {
   colors: {
     dark: "#34313D",
+    black: "#232127",
     darkPurple: "#3A3054",
     purple: "#4B3F6B",
     gray: "#9E9AA8",

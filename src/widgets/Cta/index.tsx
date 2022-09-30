@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ctaBg from "../../assets/bg-boost-desktop.svg";
 import { Button } from "../../components";
-const CtaWrapper = styled.div`
+const CtaWrapper = styled.section`
   background: url(${ctaBg}) no-repeat;
   background-color: ${({ theme }) => theme.colors.darkPurple};
   background-size: cover;

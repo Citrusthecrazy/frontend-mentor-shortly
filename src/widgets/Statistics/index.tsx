@@ -5,6 +5,7 @@ import {
   Features,
   SectionSubtitle,
   SectionTitle,
+  UrlShortener,
 } from "../../components";
 import "../../styles/Statistics.css";
 import brandRecognitionIcon from "../../assets/icon-brand-recognition.svg";
@@ -13,8 +14,9 @@ import fullyCustomizableIcon from "../../assets/icon-fully-customizable.svg";
 
 const Statistics = () => {
   return (
-    <div className="statistics-wrapper">
+    <section className="statistics-wrapper">
       <Container className="statistics-container">
+        <UrlShortener />
         <SectionTitle>Advanced Statistics</SectionTitle>
         <SectionSubtitle style={{ marginTop: "18px" }}>
           Track how your links are performing across the web with our advanced
@@ -41,7 +43,7 @@ const Statistics = () => {
           <AccentLine />
         </Features>
       </Container>
-    </div>
+    </section>
   );
 };
 

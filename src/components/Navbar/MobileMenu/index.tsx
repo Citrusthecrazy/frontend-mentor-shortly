@@ -32,6 +32,7 @@ const MobileMenuWrapper = styled.nav`
     }
   }
   height: fit-content;
+  z-index: 100;
 
   @media screen and (min-width: 376px) {
     display: none;

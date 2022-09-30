@@ -1,4 +1,5 @@
 .statistics-wrapper{
+    position: relative;
     background-color: #EFF1F7;
     height: 100%;
     width: 100%;

@@ -15,7 +15,8 @@ const UrlShortenerWrapper = styled.div`
   border-radius: 10px;
   padding: 64px 52px;
   max-width: 1110px;
-  bottom: -84px;
+  top: 0;
+  transform: translateY(-50%);
   gap: 24px;
 `;
 

@@ -1,5 +1,5 @@
 import "./styles/App.css";
-import { CTA, Hero, Navbar, Statistics } from "./widgets";
+import { CTA, Footer, Hero, Navbar, Statistics } from "./widgets";
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
       <Hero />
       <Statistics />
       <CTA />
+      <Footer />
     </div>
   );
 };

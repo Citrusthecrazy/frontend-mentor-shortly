@@ -5,7 +5,6 @@ import {
   HeroImage,
   HeroSubtitle,
   HeroTitle,
-  UrlShortener,
 } from "../../components";
 import "../../styles/Hero.css";
 import heroImage from "../../assets/illustration-working.svg";
@@ -23,7 +22,6 @@ const Hero = () => {
         </Button>
       </HeroContent>
       <HeroImage src={heroImage} alt="woman working" />
-      <UrlShortener />
     </Container>
   );
 };
