@@ -55,13 +55,9 @@ const UrlShortener = () => {
       .then((res) => {
         const { code, original_link, short_link } = res.data.result;
         if (links) {
-          setLinks((prev) => [
-            ...prev,
-            {
-              code,
-              original_link,
-              shortened_link: short_link,
-            },
+          setLinks([
+            ...links,
+            { code, original_link, shortened_link: short_link },
           ]);
         } else
           setLinks([{ code: code, original_link, shortened_link: short_link }]);
