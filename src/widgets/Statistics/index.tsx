@@ -6,17 +6,31 @@ import {
   SectionSubtitle,
   SectionTitle,
   UrlShortener,
+  LinkCard,
 } from "../../components";
 import "../../styles/Statistics.css";
 import brandRecognitionIcon from "../../assets/icon-brand-recognition.svg";
 import detailedRecordsIcon from "../../assets/icon-detailed-records.svg";
 import fullyCustomizableIcon from "../../assets/icon-fully-customizable.svg";
+import LinksContext, { LinksContextType } from "../../contexts/LinksContext";
+import { useContext } from "react";
 
 const Statistics = () => {
+  const { links } = useContext(LinksContext) as LinksContextType;
   return (
     <section className="statistics-wrapper">
       <Container className="statistics-container">
         <UrlShortener />
+        {links &&
+          links.map((link) => (
+            <LinkCard
+              key={link.code}
+              original_link={link.original_link}
+              shortened_link={link.shortened_link}
+            />
+          ))}
+        {!links && <div style={{ marginTop: "96px" }} />}
+        {links && <div style={{ marginBottom: "96px" }} />}
         <SectionTitle>Advanced Statistics</SectionTitle>
         <SectionSubtitle style={{ marginTop: "18px" }}>
           Track how your links are performing across the web with our advanced

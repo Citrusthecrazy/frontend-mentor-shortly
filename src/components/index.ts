@@ -4,7 +4,7 @@ import HeroContent from "./Hero/HeroContent";
 import HeroImage from "./Hero/HeroImage";
 import HeroSubtitle from "./Hero/HeroSubtitle";
 import HeroTitle from "./Hero/HeroTitle";
-import UrlShortener from "./Hero/UrlShortener";
+import UrlShortener from "./Statistics/UrlShortener";
 import Logo from "./Navbar/Logo/Logo";
 import MobileMenu from "./Navbar/MobileMenu";
 import MobileMenuButton from "./Navbar/MobileMenuButton";
@@ -17,6 +17,7 @@ import SectionTitle from "./SectionTitle";
 import AccentLine from "./Statistics/AccentLine";
 import FeatureCard from "./Statistics/FeatureCard";
 import Features from "./Statistics/Features";
+import LinkCard from "./Statistics/LinkCard";
 
 export {
   Container,
@@ -38,4 +39,5 @@ export {
   Features,
   FeatureCard,
   AccentLine,
+  LinkCard,
 };
