@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import SignUpButton from "../SignUpButton";
+import { Button } from "../..";
 
 const MobileMenuWrapper = styled.nav`
   position: absolute;
@@ -62,7 +62,7 @@ const MobileMenu = () => {
           <a href="#">Login</a>
         </li>
         <li>
-          <SignUpButton style={{ width: "100%" }}>Sign Up</SignUpButton>
+          <Button style={{ width: "100%" }}>Sign Up</Button>
         </li>
       </ul>
     </MobileMenuWrapper>

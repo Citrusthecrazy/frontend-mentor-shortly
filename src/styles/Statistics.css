@@ -1,0 +1,13 @@
+.statistics-wrapper{
+    background-color: #EFF1F7;
+    height: 100%;
+    width: 100%;
+    padding-top: 204px;
+    padding-bottom:120px;
+}
+.statistics-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

@@ -4,10 +4,10 @@ import {
   MobileMenuButton,
   Nav,
   NavLink,
-  SignUpButton,
   UserActions,
   NavWrapper,
   MobileMenu,
+  Button,
 } from "../../components";
 import logo from "../../assets/logo.svg";
 import "../../styles/Navbar.css";
@@ -30,7 +30,7 @@ const Navbar = () => {
       </NavWrapper>
       <UserActions>
         <NavLink href="#">Login</NavLink>
-        <SignUpButton>Sign Up</SignUpButton>
+        <Button style={{ fontSize: "15px" }}>Sign Up</Button>
       </UserActions>
       <MobileMenuButton src={hamburger} onClick={() => toggleMobileMenu()} />
       {isMobileMenuOpen && <MobileMenu />}
