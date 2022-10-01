@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export default styled.img`
-  width: 733px;
-  height: 482px;
-  object-fit: cover;
+  display: none;
+  width: 511px;
+  height: 337px;
   @media screen and (max-width: 375px) {
-    display: none;
+    display: flex;
   }
 `;

@@ -4,10 +4,10 @@ type Props = {
   icon: string;
   title: string;
   description: string;
-  style?: React.CSSProperties;
+  marginTop?: string;
 };
 
-const FeatureCardWrapper = styled.div`
+const FeatureCardWrapper = styled.div<{ marginTop?: string }>`
   position: relative;
   background: #ffffff;
   display: flex;
@@ -20,6 +20,11 @@ const FeatureCardWrapper = styled.div`
   padding: 41px 32px;
   border-radius: 5px;
   z-index: 1;
+  margin-top: ${({ marginTop }) => marginTop};
+
+  @media screen and (max-width: 375px) {
+    margin-top: 0px;
+  }
 `;
 
 const CardImageWrapper = styled.div`
@@ -56,7 +61,7 @@ const CardDescription = styled.p`
 
 const FeatureCard = (props: Props) => {
   return (
-    <FeatureCardWrapper style={props.style}>
+    <FeatureCardWrapper marginTop={props.marginTop}>
       <CardImageWrapper>
         <CardImage src={props.icon} alt={props.title} />
       </CardImageWrapper>

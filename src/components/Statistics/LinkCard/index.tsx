@@ -21,6 +21,13 @@ const LinkCardWrapper = styled.div`
   background-color: #fff;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
   margin-bottom: 16px;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 16px;
+    padding-top: 6px;
+  }
 `;
 
 const OriginalLink = styled.span`
@@ -30,11 +37,28 @@ const OriginalLink = styled.span`
   color: ${({ theme }) => theme.colors.dark};
 `;
 
+const Divider = styled.hr`
+  display: none;
+  width: 100%;
+  height: 1px;
+  background-color: ${({ theme }) => theme.colors.gray};
+  opacity: 0.35;
+  @media screen and (max-width: 375px) {
+    display: block;
+  }
+`;
+
 const ShortenedLinkGroup = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 24px;
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
 `;
 
 const ShortenedLink = styled.span`
@@ -53,6 +77,9 @@ const CopyButton = styled(Button)<{ isCopied: boolean }>`
     background-color: ${({ theme, isCopied }) =>
       isCopied ? theme.colors.purple : theme.colors.hoverCyan};
   }
+  @media screen and (max-width: 375px) {
+    width: 100%;
+  }
 `;
 
 const LinkCard = (props: Props) => {
@@ -64,6 +91,7 @@ const LinkCard = (props: Props) => {
   return (
     <LinkCardWrapper>
       <OriginalLink>{props.original_link}</OriginalLink>
+      <Divider />
       <ShortenedLinkGroup>
         <ShortenedLink>{props.shortened_link}</ShortenedLink>
         <CopyButton onClick={() => copyToClipboard()} isCopied={isLinkCopied}>

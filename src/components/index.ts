@@ -18,6 +18,7 @@ import AccentLine from "./Statistics/AccentLine";
 import FeatureCard from "./Statistics/FeatureCard";
 import Features from "./Statistics/Features";
 import LinkCard from "./Statistics/LinkCard";
+import HeroImageMobile from "./Hero/HeroImageMobile";
 
 export {
   Container,
@@ -34,6 +35,7 @@ export {
   HeroContent,
   HeroTitle,
   HeroImage,
+  HeroImageMobile,
   HeroSubtitle,
   UrlShortener,
   Features,

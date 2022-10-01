@@ -13,12 +13,20 @@ const FooterWrapper = styled.footer`
   color: ${({ theme }) => theme.colors.white};
   padding: 72px 165px;
   gap: 78px;
+
+  @media screen and (max-width: 375px) {
+    padding: 72px 35px;
+  }
 `;
 
 const FooterContainer = styled(Container)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const FooterTable = styled.table`
@@ -39,6 +47,18 @@ const FooterTable = styled.table`
       color: ${({ theme }) => theme.colors.cyan};
     }
   }
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    th {
+      padding-bottom: 16px;
+    }
+    td {
+      font-size: 14px;
+      padding-bottom: 16px;
+    }
+  }
 `;
 
 const Socials = styled.div`
@@ -50,6 +70,11 @@ const Socials = styled.div`
     &:hover {
       cursor: pointer;
     }
+  }
+  @media screen and (max-width: 375px) {
+    align-items: center;
+    justify-content: center;
+    jusitfy-self: center;
   }
 `;
 

@@ -21,6 +21,12 @@ const UrlShortenerWrapper = styled.form`
   top: 0;
   transform: translateY(-50%);
   gap: 24px;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    padding: 24px;
+    max-width: 327px;
+  }
 `;
 
 const ShortenerInput = styled.input`
@@ -36,11 +42,24 @@ const ShortenerInput = styled.input`
   ::placeholder {
     color: ${({ theme }) => theme.colors.gray};
   }
+
+  @media screen and (max-width: 375px) {
+    font-size: 16px;
+
+    ::placeholder {
+      font-size: 16px;
+    }
+  }
 `;
 
 const ShortenButton = styled(Button)`
   border-radius: 10px;
   height: 64px;
+  font-size: 18px;
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+  }
 `;
 
 const UrlShortener = () => {

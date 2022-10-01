@@ -10,3 +10,14 @@
     margin-left: 168px;
     gap: 101px;
 }
+
+
+@media screen and (max-width:375px) {
+    .hero-container{
+        padding-top: 23px;
+        padding-bottom: 168px;
+        flex-direction: column;
+        margin-left: 24px;
+        gap:37px;
+    }
+}
